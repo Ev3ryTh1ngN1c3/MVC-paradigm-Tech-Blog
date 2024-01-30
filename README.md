@@ -24,4 +24,10 @@
 
   ## Acknowledgments
 
+  thank you to Thomas Calle : https://github.com/ThomasCalle <br>
+  & UCF Coding BootCamp Teacher, TAs, Educational Assistants & Tutors, <br>
+  specifically Jaytee Padilla
+
   ## Questions
+
+  feel free to email : BrongoArtDecor@gmail.com
