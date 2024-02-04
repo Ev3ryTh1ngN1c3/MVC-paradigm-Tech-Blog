@@ -78,7 +78,7 @@
   &nbsp;& how it separates the application into three interconnected components :  <br>
   &nbsp;･ the model (data & business logic)  <br>
   &nbsp;･ the view (user interface)  <br>
-  &nbsp;･ & the controller (handles user input and updates the model and view)
+  &nbsp;･ the controller (handles user input & updates the model & view)
 
   - learned how to build the server-side of a web application using frameworks like Express.js  <br>
   &nbsp;including setting up routes, handling HTTP requests & managing server-side logic  <br>
