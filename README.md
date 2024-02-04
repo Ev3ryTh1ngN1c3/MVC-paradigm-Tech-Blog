@@ -16,14 +16,15 @@
 
   this is a CMS-style blog site similar to a Wordpress site <br>
   where developers can publish their blog posts & comment on other developers’ posts as well <br>
+  
   deployed to Heroku, this app follows the MVC paradigm in its architectural structure <br>
   using Handlebars.js, Sequelize as the ORM & the express-session npm package for authentication
   
   ## Usage 
 
   ･ presented with the homepage <br>
-    includes existing blog posts; navigation links for the homepage <br>
-    & the dashboard; with the option to log in <br>
+  (\t)includes existing blog posts; navigation links for the homepage <br>
+  (\t)& the dashboard; with the option to log in <br>
   ･ click on the homepage option <br>
   ･ on the homepage <br>
     click on other links in the navigation <br>
