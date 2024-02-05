@@ -2,7 +2,7 @@
 console.log("Sequelize version:", require('sequelize').version);
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
-const bcryptjs = require('bcryptjs');
+const bcryptjs = require('bcrypt');
 
 // define the user model by extending the sequelize model class
 class User extends Model {

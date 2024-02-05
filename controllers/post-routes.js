@@ -1,6 +1,6 @@
 const { Router } = require("express");
-const { Post, User, Comment } = require("../../models");
-const withAuth = require("../../utils/auth");
+const { Post, User, Comment } = require("../models");
+const withAuth = require("../utils/auth");
 
 // function to handle error responses
 const handleErrorResponse = (res, err) => {
