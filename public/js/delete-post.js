@@ -9,11 +9,11 @@ const deletePost = async (post_id) => {
       if (response.ok) {
         document.location.reload(); // when successful, reload the page
       } else {
-        throw new Error("Failed to delete the post."); // throw an error when unsuccessful
+        throw new Error("failed to delete the post"); // throw an error when unsuccessful
       }
     } catch (error) {
       console.error(error);
-      alert("Failed to delete the post."); // show alert when there's an error
+      alert("failed to delete the post"); // show alert when there's an error
     }
   };
   

@@ -19,11 +19,11 @@ const updatePostFormHandler = async (event) => {
       if (response.ok) {
         document.location.replace("/dashboard"); // when successful, load the dashboard page
       } else {
-        throw new Error("failed to update a post."); // throw an error when unsuccessful
+        throw new Error("failed to update a post"); // throw an error when unsuccessful
       }
     } catch (error) {
       console.error(error);
-      alert("failed to update a post."); // show alert when there's an error
+      alert("failed to update a post"); // show alert when there's an error
     }
   }
 };

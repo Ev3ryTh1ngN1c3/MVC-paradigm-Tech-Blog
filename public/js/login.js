@@ -20,11 +20,11 @@ const loginFormHandler = async (event) => {
         if (response.ok) {
           document.location.replace('/'); // when successful, load the homepage
         } else {
-          throw new Error('Failed to log in.'); // throw an error when unsuccessful
+          throw new Error('failed to log in'); // throw an error when unsuccessful
         }
       } catch (error) {
         console.error(error);
-        alert('Failed to log in.'); // show alert when there's an error
+        alert('failed to log in'); // show alert when there's an error
       }
     }
   };

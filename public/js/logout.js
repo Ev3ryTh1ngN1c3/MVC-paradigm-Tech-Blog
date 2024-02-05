@@ -9,11 +9,11 @@ const logout = async () => {
       if (response.ok) {
         document.location.replace('/'); // when successful, load the homepage
       } else {
-        throw new Error('failed to log out.'); // throw an error when unsuccessful
+        throw new Error('failed to log out'); // throw an error when unsuccessful
       }
     } catch (error) {
       console.error(error);
-      alert('failed to log out.'); // show alert when there's an error
+      alert('failed to log out'); // show alert when there's an error
     }
   };
   
