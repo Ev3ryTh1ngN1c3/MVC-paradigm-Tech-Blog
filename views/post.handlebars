@@ -1,0 +1,38 @@
+ {{!-- views/post.handlebars file --}}
+<main class="container mt-5">
+  <article>
+    <!-- title of the blog post -->
+    <h1>{{title}}</h1>
+    <!-- information about the blog post, including the creator's username & creation date -->
+    <p>created by: {{user.username}} | date: {{format_date createdAt}}</p>
+    <!-- content of the blog post -->
+    <p>{{content}}</p>
+  </article>
+  {{#if logged_in}}
+    <!-- form for adding a new comment -->
+    <form class="new-tech-comment-form" class="mb-3">
+      <div class="mb-3">
+        <label for="comment" class="form-label">add comment :</label>
+        <!-- text area for entering the comment -->
+        <textarea
+          class="form-control"
+          id="content-new-tech-comment"
+          rows="3"
+          placeholder="Add a comment..."
+        ></textarea>
+      </div>
+      <!-- button to submit the comment -->
+      <button type="submit" class="btn btn-primary">submit</button>
+    </form>
+  {{/if}}
+  <!-- heading for the comment history section -->
+  <h2>comment history:</h2>
+  {{#each comments}}
+    <div class="comment mb-3">
+      <!-- display the comment text -->
+      <p>{{comment_text}}</p>
+      <!-- display the username of the commenter & the creation date of the comment -->
+      <p>by {{user.username}} on {{format_date createdAt}}</p>
+    </div>
+  {{/each}}
+</main>
