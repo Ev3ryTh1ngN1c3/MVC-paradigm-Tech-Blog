@@ -9,7 +9,7 @@
   }
   
   body {
-    background-image: url('/images/Thomas_ChessBlogBackground.png'); /* background image */
+    background-image: url('/images/Tech-Blog background-image.png'); /* background image */
     background-position: center center; /* center the background image */
     background-repeat: no-repeat; /* do not repeat the background image */
     background-size: cover; /* scale the background image to cover the entire container */
