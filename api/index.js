@@ -1,15 +1,13 @@
-const express = require("express");
-const app = express();
+// import the required modules
+const router = require("express").Router();
+const userRoutes = require("./user-routes");
+const postRoutes = require("./post-routes");
+const commentRoutes = require("./comment-routes");
 
-// import necessary modules and routes
-const apiRoutes = require("./api");
-const homeRoutes = require("./home-routes");
+// set up the routes
+router.use("/users", userRoutes); // routes for user-related functionality
+router.use("/posts", postRoutes); // routes for post-related functionality
+router.use("/comments", commentRoutes); // routes for comment-related functionality
 
-// set up routes
-app.use("/api", apiRoutes);
-app.use("/", homeRoutes);
-
-// start the server
-app.listen(3000, () => {
-  console.log("Server started on port 3000");
-});
+// export the router
+module.exports = router;
