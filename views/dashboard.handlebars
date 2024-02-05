@@ -1,19 +1,26 @@
- <main class="container mt-5">
+<main class="container mt-5">
   <div class="row">
     <div class="col-12">
+      <!-- heading for the dashboard section -->
       <h1 class="mb-4">dashboard</h1>
+      <!-- link to create a new blog post -->
       <a href="/newpost" class="btn btn-primary">create a new blog post</a>
     </div>
   </div>
   <br>
-  <h1 class="mb-4">Tech Blog Contributions :</h1>
+  <!-- heading for the tech blog contributions section -->
+  <h1 class="mb-4">tech blog contributions :</h1>
   {{#each posts}}
     <div class="post-container post mb-3">
+      <!-- title of the blog post with a link to the post details -->
       <h2><a href="/post/{{id}}" class="text-decoration-none text-reset">{{title}}</a></h2>
-      <p>Created by: {{user.username}} | Date: {{format_date createdAt}}</p>
+      <!-- information about the blog post, including the creator's username & creation date -->
+      <p>created by: {{user.username}} | date: {{format_date createdAt}}</p>
       <div class="btn-group">
+        <!-- link to edit the blog post -->
         <a href="/editpost/{{id}}" class="btn btn-warning">edit post</a>
-        <button class="btn btn-danger delete-post" data-post-id="{{id}}">delete</button>
+        <!-- button to delete the blog post -->
+        <button class="btn btn-danger delete-post" data-post-id="{{id}}">Delete</button>
       </div>
     </div>
   {{/each}}

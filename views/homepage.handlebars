@@ -1,15 +1,19 @@
- <main class="container mt-5">
+<main class="container mt-5">
+  <!-- heading for the tech blog posts section -->
   <h1 class="mb-4 text-white">Tech Blog Posts</h1>
   <div class="row">
+    <!-- loop through each blog post -->
     {{#each posts}}
       <div class="col-md-4">
         <div class="card mb-3">
           <div class="card-header bg-warning">
+            <!-- title of the blog post with a link to the post details -->
             <h2 class="card-title">
               <a href="/post/{{id}}" class="text-dark">{{title}}</a>
             </h2>
           </div>
           <div class="card-body text-dark">
+            <!-- information about the blog post, including the creator's username & creation date -->
             <p>created by: {{user.username}} | date: {{format_date createdAt}}</p>
           </div>
         </div>
