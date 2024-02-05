@@ -11,7 +11,7 @@ const newCommentFormHandler = async (event) => {
     if (content) {
       try {
         // send a POST request to create a new comment
-        const response = await fetch(`/api/comments`, {
+        const response = await fetch(`/comments`, {
           method: 'POST',
           body: JSON.stringify({ comment_text: content, post_id }),
           headers: { 'Content-Type': 'application/json' },
@@ -32,7 +32,7 @@ const newCommentFormHandler = async (event) => {
   };
   
   // event listeners
-  const newCommentForm = document.querySelector('.new-comment-form');
+  const newCommentForm = document.querySelector('#commentForm');
   if (newCommentForm) {
     newCommentForm.addEventListener('submit', newCommentFormHandler); // add event listener for submitting a new comment
   }

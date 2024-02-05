@@ -10,13 +10,13 @@
   </article>
   {{#if logged_in}}
     <!-- form for adding a new comment -->
-    <form class="new-tech-comment-form" class="mb-3">
+    <form id ="commentForm" class="new-tech-comment-form" class="mb-3">
       <div class="mb-3">
         <label for="comment" class="form-label">add comment :</label>
         <!-- text area for entering the comment -->
         <textarea
           class="form-control"
-          id="content-new-tech-comment"
+          id="content-new-comment"
           rows="3"
           placeholder="Add a comment..."
         ></textarea>

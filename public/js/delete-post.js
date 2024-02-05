@@ -1,7 +1,7 @@
 // function to delete a post by its ID
 const deletePost = async (post_id) => {
     try {
-      const response = await fetch(`/api/posts/${post_id}`, {
+      const response = await fetch(`/posts/${post_id}`, {
         method: "DELETE",
         headers: { "Content-Type": "application/json" },
       });

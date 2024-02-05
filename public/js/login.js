@@ -10,7 +10,7 @@ const loginFormHandler = async (event) => {
     if (username && password) {
       try {
         // send a POST request to the login endpoint with the input values as JSON data
-        const response = await fetch('/api/users/login', {
+        const response = await fetch('/users/login', {
           method: 'POST',
           body: JSON.stringify({ username, password }),
           headers: { 'Content-Type': 'application/json' },
@@ -30,7 +30,7 @@ const loginFormHandler = async (event) => {
   };
   
   // event listener for the login form
-  const loginForm = document.querySelector('.login-form');
+  const loginForm = document.querySelector('#loginForm');
   if (loginForm) {
     loginForm.addEventListener('submit', loginFormHandler);
   }

@@ -10,7 +10,7 @@ const updatePostFormHandler = async (event) => {
 
   if (title && content) {
     try {
-      const response = await fetch(`/api/posts/${post_id}`, {
+      const response = await fetch(`/posts/${post_id}`, {
         method: "PUT",
         body: JSON.stringify({ title, content }),
         headers: { "Content-Type": "application/json" },

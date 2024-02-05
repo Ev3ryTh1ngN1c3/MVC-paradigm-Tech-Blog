@@ -10,7 +10,7 @@ const signupFormHandler = async (event) => {
     if (username && email && password) {
       try {
         // send a POST request to the signup endpoint with the input values as JSON data
-        const response = await fetch('/api/users/signup', {
+        const response = await fetch('/users/signup', {
           method: 'POST',
           body: JSON.stringify({ username, email, password }),
           headers: { 'Content-Type': 'application/json' },
@@ -19,7 +19,7 @@ const signupFormHandler = async (event) => {
         if (response.ok) {
           document.location.replace('/'); // when successful, load the homepage
         } else {
-          throw new Error('failed to sign up'); // throw an error when unsuccessful
+          throw new Error('failed to sign up', response); // throw an error when unsuccessful
         }
       } catch (error) {
         console.error(error);
