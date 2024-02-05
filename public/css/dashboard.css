@@ -1,0 +1,47 @@
+.post-container {
+    transition: background-color 0.3s; /* smooth transition for background color */
+  }
+  
+  .post-container:hover {
+    border-right: 1em solid #656565; /* right border on hover */
+    background-color: rgba(126, 126, 126, 0.2); /* background color on hover */
+    border-radius: 0.5em; /* rounded border corners on hover */
+  }
+  
+  body {
+    background-image: url('/images/Thomas_ChessBlogBackground.png'); /* background image */
+    background-position: center center; /* center the background image */
+    background-repeat: no-repeat; /* do not repeat the background image */
+    background-size: cover; /* scale the background image to cover the entire container */
+  }
+  
+  /* responsive features */
+  
+  @media screen and (min-width: 768px) {
+    /* css styles for tablets in landscape mode */
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    /* css styles for tablets in portrait mode */
+  }
+  
+  @media screen and (max-width: 767px) and (orientation: portrait) {
+    /* css styles for smartphones in portrait mode */
+  }
+  
+  @media screen and (max-width: 767px) {
+    /* css styles for smartphones */
+  }
+  
+  @media screen and (min-width: 1200px) {
+    /* css styles for large desktop screens */
+  }
+  
+  @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi) {
+    /* css styles for high-resolution displays */
+  }
+  
+  @media (color-gamut: srgb) {
+    /* css styles for screens with an sRGB color gamut */
+  }
