@@ -113,3 +113,6 @@
   ## Questions
 
   feel free to email : BrongoArtDecor@gmail.com
+
+
+  ![Tech Blog](https://github.com/Ev3ryTh1ngN1c3/MVC-paradigm-Tech-Blog/assets/143395934/1f492b20-2653-45f2-b384-db90a6bf8f6a)
