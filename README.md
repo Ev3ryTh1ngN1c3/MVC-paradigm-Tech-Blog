@@ -59,6 +59,10 @@
   - when idle on the site for more than a set time <br>
   &nbsp;able to view posts & comments but prompted to log in again before adding, updating or delete posts
 
+  ## Video Demonstration
+
+  https://www.loom.com/share/f95332f4f4db43d98508bb9519b5519f?sid=79467650-196e-4a7a-9be0-18d617a5f8cb
+
   ## Live URL 
 
   ## Project Motivation
